@@ -1,6 +1,6 @@
 # Accidents-in-kenya
 # Road Accidents Fatality Prediction
-This repository contains an analysis and  prediction of fatality of crashes on Kenyan roads.
+This project contains an analysis and  prediction of fatality of crashes on Kenyan roads.
 ## Project Overview
 The goal of this project is to build a machine learning model that predicts the probability of fatal outcomes in road crashes using historical crash data. Insights from this model will help transportation agencies, public safety departments, and urban planners develop data-driven interventions to reduce fatalities.
 #### Main Objective(s)
