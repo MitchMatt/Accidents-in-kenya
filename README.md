@@ -85,4 +85,19 @@ Kenya has seen multiple tragic road incidents underscoring the need for enhanced
 - **Hyperparameter Tuning**: Further tuning of model parameters to improve predictive accuracy.
 - **Real-Time Data Integration**: Potential for integrating real-time data sources, like live traffic or weather updates, to improve prediction accuracy.
 
+### Recommendations
+Based on the insights from this project, the following recommendations could help reduce road crash fatalities:
+1. **Implement Speed Control Measures**: Install speed bumps, speed cameras, and radar-based speed checks in high-risk areas.
+2. **Enhanced Road Lighting and Signage**: Improve visibility and provide clear road signage, especially in zones with high pedestrian activity.
+3. **Targeted Awareness Campaigns**: Educate the public on safe driving practices, especially in high-risk areas and during high-risk times (e.g., weekends and late nights).
+4. **Infrastructure Upgrades**: Invest in expanding narrow roads and adding pedestrian crossings and barriers where needed.
+5. **Weather-Responsive Policies**: Implement guidelines for reducing speed limits during adverse weather conditions, like heavy rain or fog.
+
+### Future Improvements
+- **Enhanced Feature Engineering**: Incorporating additional variables such as vehicle type or traffic density at crash sites.
+- **Hyperparameter Tuning**: Further tuning of model parameters to improve predictive accuracy.
+- **Real-Time Data Integration**: Potential for integrating real-time data sources, like live traffic or weather updates, to improve prediction accuracy.
+
+### Conclusion
+This project demonstrates that machine learning can be a valuable tool in identifying factors that contribute to road crash fatalities. The predictive model developed provides actionable insights that could be instrumental in reducing fatal accidents. By leveraging these insights, transportation agencies, urban planners, and public safety departments can implement targeted interventions, ultimately contributing to a safer road network in Kenya.
 
