@@ -48,7 +48,7 @@ Kenya has seen multiple tragic road incidents underscoring the need for enhanced
 - **Nairobi Expressway**: Notable for high-speed incidents.
 - **Londiani, Thika, and Voi Road Crashes**: Known areas with frequent fatalities, often due to high traffic and poor infrastructure.
   
-
+  
 
 ### Future Improvements
 - **Enhanced Feature Engineering**: Incorporating additional variables such as vehicle type or traffic density at crash sites.
