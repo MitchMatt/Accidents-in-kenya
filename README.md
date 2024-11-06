@@ -1,5 +1,11 @@
 # Accidents in Kenya - Road Accidents Fatality Prediction
 
+### Group Members
+1. Mitch Mathiu
+2. Deborah Okeyo
+3. Michael Omondi
+4. Faith Wanjala
+
 ![thika road road accidents](https://github.com/user-attachments/assets/1805f294-1858-45fc-8e24-0daf2505bead)
 
 
@@ -35,6 +41,11 @@ The dataset used in this project includes crash data from Kenya (2012-2023) and 
 - **Bivariate Analysis**: Feature coorelation Heatmap
 
 ![image](https://github.com/user-attachments/assets/7cc3d71d-6f31-4cc0-8c6b-92e4ff88c3e8)
+
+- **Geospatial Analysis**: Crash Desity Heatmap
+
+![image](https://github.com/user-attachments/assets/53f0940a-dc8c-4d21-9098-48ec6e1058ab)
+
 
 - **Target Variable Analysis**: Investigating the proportion and characteristics of fatal vs. non-fatal crashes.
   
