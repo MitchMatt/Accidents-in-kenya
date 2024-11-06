@@ -51,6 +51,10 @@ The dataset used in this project includes crash data from Kenya (2012-2023) and 
 
 ![image](https://github.com/user-attachments/assets/004d405b-b9bf-431c-be22-ecb17415eec8)
 
+-**Feature Impotence**:
+
+![image](https://github.com/user-attachments/assets/23616334-298e-4dce-9c50-1fa8d3993aa2)
+
 
 - **Target Variable Analysis**: Investigating the proportion and characteristics of fatal vs. non-fatal crashes.
   
