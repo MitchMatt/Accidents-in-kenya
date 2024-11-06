@@ -1,6 +1,7 @@
 # Accidents in Kenya - Road Accidents Fatality Prediction
 
-![kenya-nairobi-thika-highway-car-wreck-as-accident-warning-kenia-nairobi-thika-road-autobahn-autowrack-als-warnung-fr-zu-schnelles-fahren-2XB3XPW](https://github.com/user-attachments/assets/cc7729a8-4277-434b-9acc-f065299f7cd6)
+![thika road road accidents](https://github.com/user-attachments/assets/1805f294-1858-45fc-8e24-0daf2505bead)
+
 
 ### Project Overview
 This project analyzes road crashes in Kenya from 2012-2023 and builds a machine learning model to predict the likelihood of fatal outcomes in these crashes. By identifying high-risk factors and patterns, this model can support transportation agencies, public safety departments, and urban planners in developing interventions to reduce road fatalities.
