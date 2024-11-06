@@ -47,6 +47,11 @@ The dataset used in this project includes crash data from Kenya (2012-2023) and 
 ![image](https://github.com/user-attachments/assets/53f0940a-dc8c-4d21-9098-48ec6e1058ab)
 
 
+- **Multivariate Analysis**: Multivariate Analysis
+
+![image](https://github.com/user-attachments/assets/004d405b-b9bf-431c-be22-ecb17415eec8)
+
+
 - **Target Variable Analysis**: Investigating the proportion and characteristics of fatal vs. non-fatal crashes.
   
 ### Modeling Approach
