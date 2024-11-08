@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 
 # Load the trained model
-model = load_model("C:\Users\user\OneDrive\Documents\Moringa\phase\Accidents-in-kenya")
+model = load_model("deep_learning_model.h5")
 
 # Initialize a StandardScaler instance (load the saved scaler if available)
 scaler = StandardScaler()
