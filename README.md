@@ -1,7 +1,6 @@
 # Accidents in Kenya - Road Accidents Fatality Prediction
 
-<<<<<<< HEAD
-=======
+
 ### Group Members
 1. Mitch Mathiu
 2. Deborah Okeyo
@@ -13,7 +12,8 @@
 ![thika road road accidents](https://github.com/user-attachments/assets/1805f294-1858-45fc-8e24-0daf2505bead)
 
 
->>>>>>> 37045e4a30ff1a5c09e8f2b76048484267bdccba
+
+
 ### Project Overview
 This project analyzes road crashes in Kenya from 2012-2023 and builds a machine learning model to predict the likelihood of fatal outcomes in these crashes. By identifying high-risk factors and patterns, this model can support transportation agencies, public safety departments, and urban planners in developing interventions to reduce road fatalities.
 
@@ -40,8 +40,7 @@ The dataset used in this project includes crash data from Kenya (2012-2023) and 
 
 ### Exploratory Data Analysis
 - **Univariate Analysis**: Initial analysis of each feature to understand distributions.
-<<<<<<< HEAD
-=======
+
 
 ![image](https://github.com/user-attachments/assets/25f4e17e-470c-428d-b330-97b79a90af2e)
 
@@ -63,7 +62,7 @@ The dataset used in this project includes crash data from Kenya (2012-2023) and 
 ![image](https://github.com/user-attachments/assets/23616334-298e-4dce-9c50-1fa8d3993aa2)
 
 
->>>>>>> 37045e4a30ff1a5c09e8f2b76048484267bdccba
+
 - **Target Variable Analysis**: Investigating the proportion and characteristics of fatal vs. non-fatal crashes.
   
 ### Modeling Approach
@@ -93,8 +92,7 @@ Kenya has seen multiple tragic road incidents underscoring the need for enhanced
 - **Hyperparameter Tuning**: Further tuning of model parameters to improve predictive accuracy.
 - **Real-Time Data Integration**: Potential for integrating real-time data sources, like live traffic or weather updates, to improve prediction accuracy.
 
-<<<<<<< HEAD
-=======
+
 ### Recommendations
 Based on the insights from this project, the following recommendations could help reduce road crash fatalities:
 1. **Implement Speed Control Measures**: Install speed bumps, speed cameras, and radar-based speed checks in high-risk areas.
@@ -110,5 +108,5 @@ Based on the insights from this project, the following recommendations could hel
 
 ### Conclusion
 This project demonstrates that machine learning can be a valuable tool in identifying factors that contribute to road crash fatalities. The predictive model developed provides actionable insights that could be instrumental in reducing fatal accidents. By leveraging these insights, transportation agencies, urban planners, and public safety departments can implement targeted interventions, ultimately contributing to a safer road network in Kenya.
->>>>>>> 37045e4a30ff1a5c09e8f2b76048484267bdccba
+
 
