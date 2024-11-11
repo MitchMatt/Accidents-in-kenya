@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs32\lang9                       \b Road Accidents Fatality Data Report\b0\par
+\fs24                                                   Novermber 2024\par
+  \b\fs28 TABLE OF CONTENT\par
+Business Understanding\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85.1 \par
+Data Understanding\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85..2\par
+Data Preparation.\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85...3\par
+Modeling..\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85..4\par
+Deployment........................................................................5\par
+Evaluation...........................................................................6\par
+Recommendations \'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85.7\b0\fs22\par
+\b\fs24 1. Business Understanding\b0\par
+\b Objective:\b0\par
+The primary goal of this project is to develop a machine learning model that can predict the likelihood of fatality  occurring in accidents based on specific factors, such as location, time, and other contextual data. The aim is to provide insights into high-risk areas and times, helping to allocate resources efficiently and implement preventive measures. Ultimately, the project seeks to support traffic safety authorities in reducing accidents through data-driven decision-making.\par
+Key Questions:\par
+\tab\f1\bullet\tab What are the main factors contributing to accidents?\par
+\tab\bullet\tab Can we accurately predict accidents and identify high-risk areas or times?\par
+\tab\bullet\tab How can the predictive model be deployed for real-time applications?\par
+2. Data Understanding\par
+Data Collection:\par
+The dataset consists of crash data, including geographical coordinates (latitude and longitude), temporal details, and various categorical and numerical features related to crash characteristics.\par
+Exploratory Data Analysis (EDA):\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Geospatial Analysis: Latitude and longitude data was analyzed to identify high-density crash zones, with a heatmap providing visual insights into crash hotspots.\par
+{\pntext\f2\'B7\tab}Temporal Patterns: Analysis of crash occurrences over time helped to identify high-risk hours and days.\par
+{\pntext\f2\'B7\tab}Feature Distributions: Histograms and pair plots were used to understand the distribution of key features (e.g., crash reports, presence of fatality words, specific vehicle mentions like motorcycles or matatus).\par
+{\pntext\f2\'B7\tab}Correlations: Relationships between features were explored to identify any dependencies or patterns.\par
+
+\pard\sa200\sl276\slmult1 Insights from EDA:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 High-density clusters indicate specific geographic regions with frequent accidents.\par
+{\pntext\f2\'B7\tab}Certain times and days have higher accident occurrences, suggesting temporal trends.\par
+{\pntext\f2\'B7\tab}Some keywords (e.g., \ldblquote fatality\rdblquote ) were noted to be indicators of more severe crashes.\par
+
+\pard\sa200\sl276\slmult1\b\fs28 3. Data Preparation\b0\fs22\par
+\b\fs24 Preprocessing Steps\b0 :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Feature Engineering: New features were created to capture contextual data, such as indicators for mentions of keywords (e.g., \ldblquote pedestrian,\rdblquote  \ldblquote matatu,\rdblquote  \ldblquote fatality\rdblquote ), and transformations were applied to latitude and longitude data for geospatial analysis.\par
+{\pntext\f2\'B7\tab}Handling Missing Values: Any missing values were addressed through imputation or exclusion, as required.\par
+{\pntext\f2\'B7\tab}Scaling: Numerical features were scaled to ensure model stability and improve performance, especially for distance-based models.\par
+{\pntext\f2\'B7\tab}Encoding: Categorical features were one-hot encoded to make them suitable for machine learning models.\par
+{\pntext\f2\'B7\tab}Splitting: The dataset was split into training and testing sets to validate the models effectively.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs24 Challenges:\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Imbalanced Data: Certain categories, such as keywords indicating fatalities, were less represented, leading to a class imbalance.\par
+{\pntext\f2\'B7\tab}High Dimensionality: The large number of categorical variables led to high dimensionality after encoding.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs24 4. Modeling\b0\fs22\par
+\b\fs24 Model Selection\b0\fs22 :\par
+\fs24 Various models were selected to evaluate different approaches to prediction:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Baseline: A Dummy Classifier was used as a benchmark.\par
+{\pntext\f2\'B7\tab}Machine Learning Models:\par
+{\pntext\f2\'B7\tab}Random Forest, Logistic Regression, Gradient Boosting, and SVM were trained with cross-validation and hyperparameter tuning.\par
+{\pntext\f2\'B7\tab}Ensemble Method: A Voting Classifier was used to combine predictions from multiple models, enhancing robustness.\par
+{\pntext\f2\'B7\tab}Deep Learning Model: A neural network was implemented to capture complex patterns in the data, showing high predictive accuracy.\fs22\par
+
+\pard\sa200\sl276\slmult1\b\fs24 Evaluation Metrics\b0\fs22 :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Accuracy, Precision, Recall, F1-score, and ROC-AUC were used to assess model performance.\par
+{\pntext\f2\'B7\tab}Calibration Curve: Assessed the reliability of probability estimates, ensuring that the predicted probabilities were consistent with observed outcomes.\fs22\par
+
+\pard\sa200\sl276\slmult1 Model Performance:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 The Random Forest model performed well, with strong accuracy and stability.\par
+{\pntext\f2\'B7\tab}Ensemble Voting Classifier provided robust generalization by combining multiple models.\par
+{\pntext\f2\'B7\tab}The Neural Network achieved high accuracy, indicating potential for future enhancement with more data.\par
+
+\pard\sa200\sl276\slmult1\b 5. Evaluation\b0\fs22\par
+\b\fs24 Key Insights:\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 High-Risk Areas: Geospatial analysis revealed specific regions with frequent accidents, enabling targeted safety interventions.\par
+{\pntext\f2\'B7\tab}Influential Features: Certain features, such as time of day, location, and specific keywords (e.g., \ldblquote fatality,\rdblquote  \ldblquote motorcycle\rdblquote ), were significant predictors of accident severity.\par
+{\pntext\f2\'B7\tab}Model Interpretability: Random Forest and Logistic Regression offered insights into feature importance, aiding interpretability.\par
+
+\pard\sa200\sl276\slmult1\b Conclusion:\b0\fs22\par
+\fs24 The models provided effective predictions, with the Random Forest and ensemble models showing high performance. The deep learning model achieved promising results, suggesting it may be further optimized with additional data.\par
+\fs22\par
+\b Limitations:\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 The dataset\rquote s imbalanced nature, particularly around keywords like \ldblquote fatality\rdblquote  or \ldblquote pedestrian,\rdblquote  could impact predictive performance.\par
+{\pntext\f2\'B7\tab}Some important contextual data may be missing, limiting the models\rquote  capacity to capture all accident-related nuances\fs22 .\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs24 6. Deployment\b0\fs22\par
+\b Deployment Strategy:\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Model Saving: Models and preprocessing objects were serialized using joblib for easy loading during deployment.\par
+{\pntext\f2\'B7\tab}API Development: A REST API was built using Flask to serve model predictions, allowing for integration with web or mobile applications.\par
+{\pntext\f2\'B7\tab}Containerization: A Dockerfile was included to create a containerized version of the API, ensuring consistent deployment across environments.\par
+{\pntext\f2\'B7\tab}Cloud Deployment: Guidelines were provided for deploying the Docker container on a cloud platform (e.g., AWS, Google Cloud), enabling real-time access to predictions.\par
+
+\pard\sa200\sl276\slmult1\fs22\par
+\b\fs24 Monitoring and Maintenance:\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Monitoring: Suggested monitoring of API usage and model predictions to ensure performance and identify data drift.\par
+{\pntext\f2\'B7\tab}Retraining: Recommendations for periodic retraining based on new data to maintain model relevance and accuracy\fs22 .\par
+
+\pard\sa200\sl276\slmult1\par
+\b\fs24 7. Recommendations for Future Work\b0\fs22\par
+\b\fs24 Data Collection:\b0\fs22\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\fs24 Collect more data, particularly with underrepresented keywords or categories, to improve model accuracy and robustness.\fs22\par
+
+\pard\sa200\sl276\slmult1\par
+\b Feature Engineering:\b0\par
+\tab\fs24\bullet Incorporate additional geospatial data, such as proximity to intersections or road types, for enhanced context\fs22 .\par
+\b\fs24\par
+Advanced Modeling\b0\fs22 :\par
+\tab\bullet\fs24 Explore other ensemble techniques, like Stacking or Boosting, and advanced deep learning architectures to further boost performance.\fs22\par
+\b\fs24 Real-Time Data Integration:\b0\fs22\par
+\tab\bullet\fs24 Integrate real-time data sources, such as weather or traffic conditions, to improve the timeliness and relevance of predictions\fs22 .\par
+\b\fs24 Stakeholder Communication:\b0\fs22\par
+\tab\bullet\fs24 Develop a dashboard to visualize high-risk areas, peak times, and model predictions in a user-friendly format for non-technical stakeholders.\fs22\par
+\f0\par
+}
+ 
