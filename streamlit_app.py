@@ -8,6 +8,9 @@ from tensorflow.keras.models import load_model
 # Load the trained model
 model = load_model("deep_learning_model.h5")
 
+model.save("deep_learning_model.h5")
+
+
 # Initialize a StandardScaler instance (load the saved scaler if available)
 scaler = StandardScaler()
 
@@ -37,3 +40,5 @@ input_data = scaler.fit_transform(input_data)  # Use fit_transform if scaler is 
 if st.button("Predict"):
     prediction = model.predict(input_data)
     st.write(f"Crash Likelihood: {prediction[0][0]:.2f}")
+model.save("deep_learning_model.h5")
+
